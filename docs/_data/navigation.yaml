@@ -1,0 +1,65 @@
+- name: Collision Maps
+  link: /content/maps
+  dropdown:
+    - name: Fatal Collisions
+      link: /content/maps/fatal_collisions
+    - name: Serious Collisions 2022 - 2023
+      link: /content/maps/serious_collisions_22_23
+    - name: Serious Collisions 2020 - 2021
+      link: /content/maps/serious_collisions_20_21
+    - name: Serious Collisions 2018 - 2019
+      link: /content/maps/serious_collisions_18_19
+    - name: Pedestrian Collisions 2018 - 2023
+      link: /content/maps/pedestrian_18_23
+    - name: Cyclist Collisions 2018 - 2023
+      link: /content/maps/cyclist_18_23
+
+- name: Hot Spots
+  link: /content/hotspots
+  dropdown:
+    - name: Dangerous Areas
+      link: /content/hotspots/clusters_serious
+    - name: Dangerous Areas for Pedestrians
+      link: /content/hotspots/clusters_pedestrian
+    - name: Dangerous Areas for Cyclists
+      link: /content/hotspots/clusters_cyclist
+    - name: Dangerous Points
+      link: /content/hotspots/points_serious
+    - name: Dangerous Points Pedestrians
+      link: /content/hotspots/points_pedestrian
+    - name: Dangerous Points Cyclists
+      link: /content/hotspots/points_cyclist
+
+- name: Trends
+  link: /content/trends
+  dropdown:
+    - name: Yearly
+      link: /content/trends/yearly
+    - name: Seasonal
+      link: /content/trends/seasonal
+    - name: Monthly
+      link: /content/trends/monthly
+    - name: Weekly
+      link: /content/trends/weekly
+- name: By Police Precinct
+  link: /content/police
+  dropdown:
+    - name: Serious Collisions
+      link: /content/police/precinct_serious
+    - name: Pedestrian Collisions
+      link: /content/police/precinct_pedestrian
+    - name: Cyclist Collisions
+      link: /content/police/precinct_cyclist
+    - name: Fatal Collisions
+      link: /content/police/precinct_fatal
+- name: By City Council District
+  link: /content/citycouncil
+  dropdown:
+    - name: Serious Collisions
+      link: /content/citycouncil/citycouncil_serious
+    - name: Pedestrian Collisions
+      link: /content/citycouncil/citycouncil_pedestrian
+    - name: Cyclist Collisions
+      link: /content/citycouncil/citycouncil_cyclist
+    - name: Fatal Collisions
+      link: /content/citycouncil/citycouncil_fatal
