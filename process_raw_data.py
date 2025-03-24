@@ -14,7 +14,7 @@ from src.constants import (
 
 PROCESSED_DATA_LOC = "data/processed/crashes.pkl"
 
-# downloaded June 2024
+
 # https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95
 COLLISION_DATA_LOC = "data/raw/collisions/Collisions.csv"
 
@@ -22,7 +22,7 @@ COLLISION_DATA_LOC = "data/raw/collisions/Collisions.csv"
 # https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz
 POLICE_PRECINCT_GEOMS_LOC = "data/raw/police/nyc_police_precincts_geoms.geojson"
 
-# downloaded June 2024
+
 # https://data.cityofnewyork.us/City-Government/City-Council-Districts/yusd-j4xi
 DISTRICT_GEO_LOC = "data/raw/citycouncil/City Council Districts.geojson"
 
