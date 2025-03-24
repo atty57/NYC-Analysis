@@ -1,5 +1,4 @@
 # Analyzing New York City Motor Vehicle Collisions
-#### [https://ray310.github.io/NYC-Vehicle-Collisions/](https://ray310.github.io/NYC-Vehicle-Collisions/)
 
 In this project, we analyze motor vehicle collisions in New York City (NYC) to:
 - Understand the magnitude of the problem they represent
@@ -10,9 +9,6 @@ In this project, we analyze motor vehicle collisions in New York City (NYC) to:
 - Highlight problematic locations and areas that may not be obvious
 <br><br>
 
-### To View Project Website
-[https://ray310.github.io/NYC-Vehicle-Collisions/](https://ray310.github.io/NYC-Vehicle-Collisions/)
-<br><br>
 
 ### Supplemental Analysis
 __Vehicle Activity Index__
@@ -26,9 +22,6 @@ __Vehicle Activity Index__
  by examining the weekly traffic pattern of select crossings.
  patterns was performed
 - Gaps were identified in the MTA dataset and imputed using XGBoost regression.
-- Please see the following notebooks:
-  - [1b-profiling-mta-traffic-index.ipynb](https://nbviewer.org/github/ray310/NYC-Vehicle-Collisions/blob/main/1b-profiling-mta-traffic-index.ipynb)
-  - [2a-preparing-mta-data-xgboost.ipynb](https://nbviewer.org/github/ray310/NYC-Vehicle-Collisions/blob/main/2a-preparing-mta-data-xgboost.ipynb)
 
 __Cycling Activity Index__
 
@@ -41,11 +34,11 @@ __Cycling Activity Index__
  going back to 2015
 - Yearly, monthly, weekly, and daily traffic patterns in the cycling index were profiled
 - Please see the following notebooks:
-  - [1c-profiling-nyc-bike-counter-data.ipynb](https://nbviewer.org/github/ray310/NYC-Vehicle-Collisions/blob/main/1c-profiling-nyc-bike-counter-data.ipynb)
+  - [1c-profiling-nyc-bike-counter-data.ipynb]
 
 ### To Directly View Notebooks with Full Content
 Project notebooks with maps can best be viewed using Jupyter's nbviewer.  
-[View project notebooks with nbviewer](https://nbviewer.org/github/ray310/NYC-Vehicle-Collisions/tree/main/)
+[View project notebooks with nbviewer]
 
 _Note that some notebooks may be slow to display or may not display well on mobile devices_
 <br><br>
