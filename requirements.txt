@@ -24,3 +24,5 @@ seaborn==0.13.2
 shapely==2.0.1
 statsmodels==0.14.2
 xgboost==2.0.3
+flask
+flask
