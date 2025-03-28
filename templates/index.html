@@ -6,24 +6,79 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            line-height: 1.6;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .chart {
             text-align: center;
             margin: 20px 0;
         }
-        h1 {
-            color: #333;
-            text-align: center;
+        h1 { color: #333; }
+        h2 { color: #444; }
+        pre {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
         }
     </style>
 </head>
 <body>
-    <h1>NYC Vehicle Collision Analysis</h1>
-    <div class="chart">
-        <img src="data:image/png;base64,{{ plot_url }}" alt="Annual Collisions Chart">
+    <div class="header">
+        <h1>NYC Vehicle Collision Analysis</h1>
+        <p>A comprehensive analysis of motor vehicle collisions in New York City</p>
+    </div>
+
+    <div class="section">
+        <h2>Annual Collision Trends</h2>
+        <div class="chart">
+            <img src="data:image/png;base64,{{ plot_url }}" alt="Annual Collisions Chart">
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Analysis of collision patterns by time and location</li>
+            <li>Visualization of serious collisions and fatalities</li>
+            <li>Integration with NYC traffic data</li>
+            <li>Interactive maps and detailed statistics</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Code Structure</h2>
+        <pre>
+src/
+  ├── visualizations.py - Data visualization functions
+  ├── constants.py - Project constants and settings
+  ├── utils.py - Utility functions
+  └── strings.py - String manipulation utilities
+
+templates/
+  └── index.html - Web interface template
+
+docs/
+  └── content/ - Documentation and analysis results
+        </pre>
     </div>
 </body>
 </html>

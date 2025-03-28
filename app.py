@@ -13,9 +13,20 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Create sample data for yearly collisions
+    # Create sample data for yearly collisions with improved visual style
     years = list(range(2018, 2023))
     collisions = [45000, 43000, 29000, 35000, 40000]
+    
+    # Create plot with better styling
+    fig, ax = setup_chart(
+        figsize=(12, 6),
+        title="Annual NYC Collisions (2018-2022)",
+        xlabel="Year",
+        ylabel="Number of Collisions",
+        ylabel_size=14,
+        xlabel_size=14,
+        titlesize=16
+    )
     
     # Create plot using existing visualization function
     fig, ax = setup_chart(
