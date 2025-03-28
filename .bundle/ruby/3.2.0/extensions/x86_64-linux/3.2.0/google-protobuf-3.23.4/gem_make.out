@@ -1,0 +1,122 @@
+current directory: /home/runner/workspace/.bundle/ruby/3.2.0/gems/google-protobuf-3.23.4/ext/google/protobuf_c
+/nix/store/v45ny4knx2a7mmv12nm72a79dr8hlzqc-ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/runner/workspace/.bundle/ruby/3.2.0/gems/google-protobuf-3.23.4/ext/google/protobuf_c
+make DESTDIR\= sitearchdir\=./.gem.20250328-301-ztq7me sitelibdir\=./.gem.20250328-301-ztq7me clean
+
+current directory: /home/runner/workspace/.bundle/ruby/3.2.0/gems/google-protobuf-3.23.4/ext/google/protobuf_c
+make DESTDIR\= sitearchdir\=./.gem.20250328-301-ztq7me sitelibdir\=./.gem.20250328-301-ztq7me
+compiling protobuf.c
+compiling convert.c
+compiling defs.c
+compiling message.c
+message.c: In function ‘Map_initialize_kwarg’:
+message.c:511:24: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  511 |     upb_MiniTable* t = upb_MessageDef_MiniTable(map_init->val_type.def.msgdef);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+message.c: In function ‘MessageValue_FromValue’:
+message.c:542:24: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  542 |     upb_MiniTable* t = upb_MessageDef_MiniTable(info.def.msgdef);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+message.c: In function ‘Message_initialize’:
+message.c:658:22: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  658 |   upb_MiniTable* t = upb_MessageDef_MiniTable(self->msgdef);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~
+compiling repeated_field.c
+compiling map.c
+map.c: In function ‘Map_delete’:
+map.c:468:26: warning: passing argument 1 of ‘upb_Map_Delete’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  468 |   if (upb_Map_Delete(self->map, key_upb, &val_upb)) {
+      |                      ~~~~^~~~~
+In file included from defs.h:37,
+                 from protobuf.h:38,
+                 from convert.h:36,
+                 from map.c:31:
+ruby-upb.h:929:38: note: expected ‘upb_Map *’ but argument is of type ‘const upb_Map *’
+  929 | UPB_API bool upb_Map_Delete(upb_Map* map, upb_MessageValue key,
+      |                             ~~~~~~~~~^~~
+compiling ruby-upb.c
+ruby-upb.c: In function ‘upb_EnumDef_MiniDescriptorEncode’:
+ruby-upb.c:8125:24: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+ 8125 |   for (size_t i = 0; i < e->value_count; i++) {
+      |                        ^
+ruby-upb.c: In function ‘_upb_EnumReservedNames_New’:
+ruby-upb.c:8165:24: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+ 8165 |   for (size_t i = 0; i < n; i++) {
+      |                        ^
+ruby-upb.c: In function ‘_upb_EnumDefs_New’:
+ruby-upb.c:8250:24: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+ 8250 |   for (size_t i = 0; i < n; i++) {
+      |                        ^
+ruby-upb.c: In function ‘_upb_EnumValueDefs_New’:
+ruby-upb.c:8404:24: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+ 8404 |   for (size_t i = 0; i < n; i++) {
+      |                        ^
+ruby-upb.c: In function ‘_upb_FieldDef_Create’:
+ruby-upb.c:9077:21: warning: comparison of integer expressions of different signedness: ‘uint32_t’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+ 9077 |     if (oneof_index >= upb_MessageDef_OneofCount(m)) {
+      |                     ^~
+ruby-upb.c: In function ‘_upb_FileDef_Create’:
+ruby-upb.c:9546:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+ 9546 |   for (int i = 0; i < n; i++) {
+      |                     ^
+ruby-upb.c: In function ‘_upb_ReservedNames_New’:
+ruby-upb.c:10472:24: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+10472 |   for (size_t i = 0; i < n; i++) {
+      |                        ^
+ruby-upb.c: In function ‘upb_Map_Delete’:
+ruby-upb.c:520:13: warning: ‘v.val’ may be used uninitialized [-Wmaybe-uninitialized]
+  520 |   upb_value v;
+      |             ^
+In file included from ruby-upb.c:2:
+In function ‘upb_value_getconstptr’,
+    inlined from ‘upb_DefPool_FindExtensionByMiniTable’ at ruby-upb.c:7892:10:
+ruby-upb.h:1054:12: warning: ‘v.val’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1054 |     return (type_t)(converter)val.val;                               \
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+ruby-upb.h:1064:1: note: in expansion of macro ‘FUNCS’
+ 1064 | FUNCS(constptr, constptr, const void*, uintptr_t, UPB_CTYPE_CONSTPTR)
+      | ^~~~~
+ruby-upb.c: In function ‘upb_DefPool_FindExtensionByMiniTable’:
+ruby-upb.c:7889:13: note: ‘v.val’ was declared here
+ 7889 |   upb_value v;
+      |             ^
+In function ‘upb_value_getconstptr’,
+    inlined from ‘upb_DefPool_FindExtensionByMiniTable’ at ruby-upb.c:7892:10,
+    inlined from ‘upb_DefPool_FindExtensionByNumber’ at ruby-upb.c:7901:16:
+ruby-upb.h:1054:12: warning: ‘v.val’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1054 |     return (type_t)(converter)val.val;                               \
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+ruby-upb.h:1064:1: note: in expansion of macro ‘FUNCS’
+ 1064 | FUNCS(constptr, constptr, const void*, uintptr_t, UPB_CTYPE_CONSTPTR)
+      | ^~~~~
+ruby-upb.c: In function ‘upb_DefPool_FindExtensionByNumber’:
+ruby-upb.c:7889:13: note: ‘v.val’ was declared here
+ 7889 |   upb_value v;
+      |             ^
+In function ‘upb_value_getconstptr’,
+    inlined from ‘upb_DefPool_FindExtensionByMiniTable’ at ruby-upb.c:7892:10,
+    inlined from ‘upb_Message_Next’ at ruby-upb.c:9840:16:
+ruby-upb.h:1054:12: warning: ‘v.val’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1054 |     return (type_t)(converter)val.val;                               \
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+ruby-upb.h:1064:1: note: in expansion of macro ‘FUNCS’
+ 1064 | FUNCS(constptr, constptr, const void*, uintptr_t, UPB_CTYPE_CONSTPTR)
+      | ^~~~~
+ruby-upb.c: In function ‘upb_Message_Next’:
+ruby-upb.c:7889:13: note: ‘v.val’ was declared here
+ 7889 |   upb_value v;
+      |             ^
+compiling wrap_memcpy.c
+compiling ./third_party/utf8_range/naive.c
+compiling ./third_party/utf8_range/range2-neon.c
+compiling ./third_party/utf8_range/range2-sse.c
+linking shared-object google/protobuf_c.so
+
+current directory: /home/runner/workspace/.bundle/ruby/3.2.0/gems/google-protobuf-3.23.4/ext/google/protobuf_c
+make DESTDIR\= sitearchdir\=./.gem.20250328-301-ztq7me sitelibdir\=./.gem.20250328-301-ztq7me install
+install -c -p -m 755 protobuf_c.so ./.gem.20250328-301-ztq7me/google
+
+current directory: /home/runner/workspace/.bundle/ruby/3.2.0/gems/google-protobuf-3.23.4/ext/google/protobuf_c
+make DESTDIR\= sitearchdir\=./.gem.20250328-301-ztq7me sitelibdir\=./.gem.20250328-301-ztq7me clean

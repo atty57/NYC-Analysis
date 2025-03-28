@@ -1,0 +1,4 @@
+modules = ["python-3.12", "ruby-3.2"]
+
+[nix]
+channel = "stable-24_05"
